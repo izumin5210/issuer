@@ -6,6 +6,7 @@
   ],
   "plugins": [
     "transform-function-bind",
+    "transform-decorators-legacy",
     "transform-runtime"
   ],
   "env": {
@@ -18,6 +19,13 @@
           "espower",
           {
             "embedAst": true
+          }
+        ],
+        [
+          "flow-runtime",
+          {
+            "assert": true,
+            "annotate": true
           }
         ],
         "react-hot-loader/babel"
